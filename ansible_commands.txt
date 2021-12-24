@@ -1,1 +1,7 @@
+# first command used...
+
 ansible all --key-file ~/.ssh/id_ed25519.pub -i inventory -m ping
+
+# second command after creation of ansible.cfg
+
+ansible all -m ping
