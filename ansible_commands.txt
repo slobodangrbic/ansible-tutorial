@@ -19,3 +19,5 @@ ansible all -m gather_facts --limit 192.168.0.203
 ansible all -m apt -a update_cache=true
 
 ansible all -m apt -a update_cache=true --become --ask-become-pass
+
+ansible 192.168.0.203 -m dnf -a name=vim --become --ask-become-pass
